@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+.navbar-item1 {
+    display: inline-block;
+    margin: auto 90px;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: rgb(60, 60, 255);
+}
+.navbar-item1 i{
+    margin-right: 10px;
+    font-size: 24px;
+}
+.navbar-item2 {
+    display: inline-block;
+    margin: auto 80px;
+}
+.signupButton{ 
+    padding: 10px 20px; 
+    font-size: 15px; 
+    border-radius: 10px; 
+    margin: 10px; 
+    align-items: center; 
+    cursor: pointer; 
+    border: 1px solid rgb(90, 90, 255); 
+    background-color: white;
+    color: rgb(90, 90, 255);
+    transition: 0.4s ease-in;
+} 
+.signupButton:hover{ 
+    background-color: rgb(90, 90, 255);
+    border-color:rgb(90, 90, 255);
+    color: white;
+}
+.loginButton{
+    font-size: 15px; 
+    margin: 10px; 
+    cursor: pointer; 
+    background-color: white;
+    border: none;
+    color: rgb(90, 90, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landingPage-section1{
+    height: 100vh;
+}
+.landingPageMainContainer{
+    display: flex;
+    margin-top: 30px;
+}
+.landingPageSmallContainer{
+    width: 50%;
+}
+.landingPageBox1{
+    padding-left: 90px;
+    margin-top: 90px;
+    color: black;
+}
+.landingPageBox2 img{
+    margin-left: 60px;   
+    width: 500px;
+    height: 500px;
+}
+
+.landingPageBox1-item1{
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    margin-bottom: 37px;
+}
+
+.landingPageBox1-item2{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 37px;
+}
+
+.landingPageBox1-button{
+    padding: 10px 60px; 
+    font-size: 15px; 
+    border-radius: 10px; 
+    margin: 7px; 
+    align-items: center; 
+    cursor: pointer;  
+    border: 1px solid rgb(90, 90, 255);      
+    background-color: rgb(90, 90, 255); 
+    color: white;
+    margin-bottom: 37px;
+}
+
+.landingPageBox1-button:hover{
+    background-color:rgb(110, 110, 255); 
+    border-color:rgb(110, 110, 255);
+}
+
+.landingPage_Section1{
+    height: 91vh;
+}
+
+.socialMediaLinks{
+    margin-left: 41px;
+}
+
+.socialMediaLinks i{
+    padding-right: 10px;
+    font-size: 24px;
+}
+.socialMediaLinks i:hover{
+    color: rgb(90, 90, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landingPage-section2{
+    height: 100vh;
+}
+
+.landingPage-section2-container{
+    display: flex;
+}
+
+.landingPage-section2-container-item1{
+    width: 50%;
+    
+}
+
+.landingPage-section2-container-item2{
+    width: 50%;
+
+}
+
+.landingPage-section2-container-item2 img{
+    width: 400px;
+    height: 400px;
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+.landingPage-data-information{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 37px;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+
+.landingPage-data1{
+    text-align: center;
+    font-size: 1.5vw;
+    font-size: 24px;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+.landingPage-data2{
+    text-align: center;
+    font-size:24px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+.landingPage-data3{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.information-section{
+    background-color: rgb(42, 42, 42);
+}
+.information-section-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.information-item1{
+    height: 310px;
+    margin: 0px 110px;
+    margin-top: 140px;
+    position: relative;
+}
+.information-item2{
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: sans-serif;
+    color: rgb(140, 140, 140);
+}
+.line-shape1{
+    width: 90vw;
+    height: 1px;
+    border-top: 1px solid rgb(140, 140, 140);
+    margin-top: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.information-item1-title{
+    font-size: 21px;
+    font-family: sans-serif;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    color: white;
+}
+.information-item1-element{
+    font-family: sans-serif;
+    margin-bottom: 24px;
+    color: rgb(140, 140, 140);
+}
+.information-item1-info a{
+    color: rgb(140, 140, 140);
+    text-decoration: none;
+}
+.information-item1-info a:hover{
+    color: white;
+}
+.information-item1-info:hover{
+    color: white;
+    cursor: pointer;
+}
+.information-item1-element i{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* ******************************************************************************************************  */
+
+
+
+
+
+
+
+
+@media(max-width:1400px){
+
+    /* information section css  */
+    .information-item1-title{
+        text-align: center;
+    }
+    .information-item1-element{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:1200px){
+
+    /* landing page section2 css  */
+    .landingPage-data-information{
+        font-size: 30px;
+    }
+    .landingPage-data1{
+        font-size: 21px;
+    }
+    .landingPage-data2{
+        font-size: 21px;
+    }
+    .landingPage-data3{
+        font-size: 21px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:1100px){
+
+    /* landing page section1 responsive css  */
+    .landingPageBox2 img{
+        margin-left: 30px;   
+        width: 400px;
+        height: 400px;
+        margin-top: 15px;
+    }
+    .landingPageBox1-item1{
+        font-size: 30px;
+    }
+
+
+    /* landing page section2 css  */
+    .landingPage-section2-container-item2 img{
+        width: 300px;
+        height: 300px;
+    }
+    .landingPage-data-information{
+        font-size: 24px;
+    }
+    .landingPage-data1{
+        font-size: 18px;
+    }
+    .landingPage-data2{
+        font-size: 18px;
+    }
+    .landingPage-data3{
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width:900px){
+
+    /* responsive navbar css  */
+    .navbar-item1{
+        margin: auto 15px;
+    }
+    .navbar-item1 i{
+        margin-right: 5px;
+    }
+    .navbar-item2{
+        margin: auto 10px;
+    }
+
+    /* landing page section1 responsive css  */
+    .landingPageMainContainer{
+        display: block;
+    }
+    .landingPageSmallContainer{
+        width: fit-content;
+    }
+    .landingPageBox1{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .landingPageBox2{
+        text-align: center;
+        width: 100vw;
+    
+    }
+    .landingPageBox2 img{
+        margin: 0px; 
+    }
+
+    /* landing page section2 responsive css  */
+    .landingPage-section2-container{
+        display: block;
+        margin-top: 110px;
+    }
+    .landingPage-section2-container-item1{
+        width: fit-content;
+        text-align: center;
+    }
+    .landingPage-section2-container-item2{
+        width: 100vw;
+        text-align: center;
+    }
+    .landingPage-section2-container-item2 img{
+        margin-left: 0px;
+        text-align: center;
+        width: 400px;
+        height: 400px;
+    }
+    .landingPage-data-information{
+        margin: 30px 0px;
+    }
+    .landingPage-data1{
+        font-size: 19px;
+        margin: 5px 0px;
+    }
+    .landingPage-data2{
+        font-size: 19px;
+        margin: 5px 0px;
+    }
+    .landingPage-data3{
+        font-size: 19px;
+        margin: 5px 0px;
+    }
+    .information-section{
+        margin-top: 90px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+    
+    /* responsive navbar css  */
+    .navbar-item1{
+        font-size: 21px;
+    }
+    .navbar-item1 span i{
+        font-size: 21px;
+    }
+    .loginButton{
+        margin: 5px;
+    }
+    .signupButton{
+        padding: 0px;
+        margin: 5px;
+        border: none;
+    } 
+    
+    /* landing page section1 css  */
+    .landingPageBox1-item1{
+        font-size: 20px;
+    }
+    
+    /* landing page section2 css  */
+    .landingPage-data-information{
+        font-size: 19px;
+    }
+    
+    .landingPage-data1{
+        font-size: 18px;
+    }
+    
+    .landingPage-data2{
+        font-size: 18px;
+    }
+    
+    .landingPage-data3{
+        font-size: 18px;
+    }
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:500px){
+
+    /* landing page section1 css  */
+    .landingPageBox2 img{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* landing page section2 css  */
+    .landingPage-section2-container-item2 img{
+        margin-left: 0px;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:400px){
+    
+    /* responsive navbar css  */
+    .navbar-item1{
+        font-size: 15px;
+    }
+    .navbar-item1 span i{
+        font-size: 15px;
+        margin-right: 0px;
+    }
+
+    /* landing page section1 css  */
+    .landingPageBox2 img{
+        width: 290px;
+        height: 290px;
+    }
+
+
+    /* landing page section2 css  */
+    .landingPage-section2{
+        margin-top: 110px;
+    }
+    .landingPage-data1{
+        font-size: 16px;
+    }
+    .landingPage-data2{
+        font-size: 16px;
+    }
+    .landingPage-data3{
+        font-size: 16px;
+    }
+    .landingPage-section2-container-item2 img{
+        margin-left: 0px;
+        text-align: center;
+        width: 290px;
+        height: 290px;
+    }
+
+    /* information section css  */
+    .information-item1{
+        margin: 0px 60px;
+        margin-top: 140px;
+    }
+    
+}

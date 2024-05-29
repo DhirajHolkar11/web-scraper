@@ -1,0 +1,551 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+.navbar-item1 {
+    display: inline-block;
+    margin: auto 90px;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: rgb(60, 60, 255);
+}
+.navbar-item1 i{
+    margin-right: 10px;
+    font-size: 24px;
+}
+.navbar-item2 {
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.navbar-item2 ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 9vh; 
+}
+.navbar-item2 ul li {
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    padding:24px 24px; 
+}
+.navbar-item2 ul li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-item2 ul li a.active{
+    color: blue;
+}
+.navbar-item2 ul li a:hover {
+    color: blue;
+}
+.navbar-item3 {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 90px;
+    margin-left: 240px;
+}
+.navbar-item3 i{
+    font-size: 24px;
+}
+.navbar-item3 i:hover{
+    color: blue;
+}
+.btn{  
+    padding: 10px 20px; 
+    font-size: 15px; 
+    border-radius: 10px; 
+    margin: 7px; 
+    align-items: center; 
+    width: 3cm; 
+    cursor: pointer;
+    border: 1px solid blue; 
+    background-color: white;
+    color: blue;
+    transition: 0.4s ease-in;
+} 
+.btn:hover{
+    background-color: blue;
+    border-color:blue;
+    color: white;
+}
+.container{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+.box{
+    width: 60vw;
+    height: 100vh;
+    background-color: rgb(60, 60, 60);
+    position: absolute;
+    text-align: left;
+    z-index: 10000;
+    opacity: 0;
+    right: -60vw;
+    pointer-events: none;
+    transition: 0.4s ease-in-out;
+    color: white;
+    overflow: scroll;
+    padding: 30px 0px;
+}
+.active.box{
+    opacity: 1;
+    right: 0px;
+    pointer-events: fill;
+}
+.menu_icon_box{
+    right: 24px;
+    top: 24px;
+    z-index: 24;
+    position: absolute;
+    cursor: pointer;
+    color: black;
+}
+.line1, .line2, .line3{
+    width: 24px;
+    height: 2px;
+    margin: 4px;
+    background-color: black;
+    transition: 0.2s;
+}
+.active .line1{
+    transform: translate(0px, 6px)rotate(45deg);
+    background-color: white;
+}
+.active .line2{
+    opacity: 0;
+}
+.active .line3{
+    transform: translate(0px, -6px)rotate(-45deg);
+    background-color: white;
+}
+.container{
+    visibility: hidden;
+}
+.menu_icon_box{
+    visibility: hidden;
+}
+.box nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 7vw;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.box nav ul li a:hover{
+    color: rgb(160, 160, 160);
+}
+.box nav ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.account-container{
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    margin-bottom: 110px;
+    border-radius: 10px;
+}
+.accountData-container{
+    box-shadow: 0px 0px 10px rgb(190, 190, 190);
+    border: 1px solid transparent; 
+    background-color: rgb(90, 90, 255); 
+    color: white;
+}
+.accountData-container-item1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 42px;
+}
+.email-information{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.accountData-container-item2{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 42px;
+}
+.emailId-container{
+    box-shadow: 0px 0px 10px rgb(190, 190, 190);
+    border: 1px solid transparent;  
+    margin-top: 42px; 
+    margin-bottom: 42px;
+}
+.emailId-container-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 160px;
+    font-size: 20px;
+    margin-top: 42px;
+}
+.emailId{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 38vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 9px;
+    font-size: 19px;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+.password{
+    text-align: center;
+    border: 1px solid black;
+    width: 38vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 9px;
+    font-size: 19px;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+.account-information-image i{
+    margin: 0px 10px;
+    font-size: 24px;
+    color: rgb(90, 90, 90);
+}
+.logout-button-container{
+    box-shadow: 0px 0px 10px rgb(190, 190, 190);
+    border: 1px solid transparent;
+    text-align: center;
+    margin-bottom: 42px;
+}
+.logout-button-container-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 160px;
+    font-size: 20px;
+    margin-top: 42px;
+    text-align: left;
+}
+.logout-button-container button{
+    padding: 10px 0px;
+    width: 40vw;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(90, 90, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+.logout-button-container button:hover{
+    background-color: rgb(110, 110, 255);
+}
+.deleteAccount-button-container{
+    box-shadow: 0px 0px 10px rgb(190, 190, 190);
+    text-align: center;
+    border: 1px solid transparent;
+    margin-bottom: 160px;
+}
+.deleteAccount-button-container-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 160px;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 42px;
+}
+.deleteAccount-button-container button{
+    padding: 10px 0px;
+    width: 40vw;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+    background-color: rgb(255, 60, 60);
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+.deleteAccount-button-container button:hover{
+    background-color: rgb(255, 110, 110);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.information-section{
+    border: 1px solid black;
+    background-color: rgb(42, 42, 42);
+}
+.information-section-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.information-item1{
+    height: 310px;
+    margin: 0px 110px;
+    margin-top: 140px;
+    position: relative;
+}
+.information-item2{
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: sans-serif;
+    color: rgb(140, 140, 140);
+}
+.line-shape1{
+    width: 90vw;
+    height: 1px;
+    border-top: 1px solid rgb(140, 140, 140);
+    margin-top: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.information-item1-title{
+    font-size: 21px;
+    font-family: sans-serif;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    color: white;
+}
+.information-item1-element{
+    font-family: sans-serif;
+    margin-bottom: 24px;
+    color: rgb(140, 140, 140);
+}
+.information-item1-info a{
+    color: rgb(140, 140, 140);
+    text-decoration: none;
+}
+.information-item1-info a:hover{
+    color: white;
+}
+.information-item1-info:hover{
+    color: white;
+    cursor: pointer;
+}
+.information-item1-element i{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+/* *********************************************************************************************************  */
+
+
+
+
+
+
+
+
+
+@media(max-width:1400px){
+
+    /* information section css  */
+    .information-item1-title{
+        text-align: center;
+    }
+    .information-item1-element{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* responsive navbar css  */
+
+@media (max-width:1200px){
+
+    .container{
+        visibility: visible;
+    }
+    .menu_icon_box{
+        visibility: visible;
+    }
+    .navbar-item2{
+        display: none;
+    }
+    .menu_icon_box{
+        top: 14px;
+        right: 24px;
+    }
+}
+
+
+@media(max-width:500px){
+    .navbar-item1{
+        font-size: 20px;
+        margin: auto 30px;
+    }
+    .navbar-item1 i{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+@media(max-width:1100px){
+    .emailId-container-title{
+        padding: 0px 110px;
+    }
+    .logout-button-container-title{
+        padding: 0px 110px;
+    }
+    .deleteAccount-button-container-title{
+        padding: 0px 110px;
+    }
+    .accountData-container-item1{
+        font-size: 42px;
+        padding: 0px;
+        text-align: center;
+    }
+    .email-information{
+        text-align: center;
+    }
+    .accountData-container-item2{
+        font-size: 24px;
+        padding: 0px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+@media(max-width:900px){
+
+    .emailId-container-title{
+        padding: 0px;  
+    }
+    .logout-button-container-title{
+        padding: 0px;  
+    }
+    .deleteAccount-button-container-title{
+        padding: 0px; 
+    }
+    .account-information-image{
+        display: none;
+    }
+    .account-information{
+        text-align: center;
+    }
+    .emailId-container-title{
+        display: block;
+        text-align: center;
+    }
+    .logout-button-container-title{
+        display: block;
+        text-align: center;
+    }
+    .deleteAccount-button-container-title{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media(max-width:700px){
+    .accountData-container-item1{
+        font-size: 25px;
+    }
+    .email-information{
+        font-size: 19px;
+    }
+    .accountData-container-item2{
+        font-size: 19px;
+    }
+    .emailId{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:500px){
+    .emailId{
+        font-size: 12px;
+        width: 50vw;
+        padding: 10px 0px;
+    }
+    .email-information{
+        font-size: 15px;
+    }
+    
+}
+
+
+@media(max-width:400px){
+
+    /* information section css  */
+    .information-item1{
+        margin: 0px 60px;
+        margin-top: 140px;
+    }
+}
